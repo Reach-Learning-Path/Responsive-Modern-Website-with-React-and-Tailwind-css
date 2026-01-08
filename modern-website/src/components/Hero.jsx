@@ -1,20 +1,25 @@
 import { useState, useEffect } from "react";
 import { ChevronDown } from "lucide-react";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { codeExample } from "../data/codeExample";
+import { nightOwl } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
-function Hero() {
-  const [mousePosition, setmousePosition] = useState({ x: 0, y: 0 });
+export default function Test() {
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [activeTab, setActiveTab] = useState("App.jsx");
+
   useEffect(() => {
     function handleMouseMove(event) {
-      setmousePosition({ x: event.clientX, y: event.clientY });
+      setMousePosition({ x: event.clientX, y: event.clientY });
     }
     window.addEventListener("mousemove", handleMouseMove);
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
     };
   }, []);
+
   return (
-    <section className="relative min-h-screen  flex items-center justify-center pt-16 sm:pt-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center pt-16 sm:pt-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
       <div
         className="absolute inset-0 opacity-30"
         style={{
@@ -24,7 +29,7 @@ function Hero() {
       <div className="relative order-2 w-full">
         <div className="relative bg-white/5 backdrop-blur-xl rounded-xl sm:-2xl p-3 sm:p-4 shadow-2xl border border-white/10">
           <div className="bg-gradient-to-br from-gray-900/20 to-gray-800/20 backdrop-blur-sm rounded-lg overflow-hidden h-[280px] sm:w-[450px] border border-white/5">
-            {/*Hero Content*/}
+            {/* Hero Content */}
             <div className="flex items-center justify-between px-3 sm:px-4 py-2 sm:py-3 bg-white/5 backdrop-blur-sm border-b border-white/10">
               <div className="flex items-center sm:space-x-2">
                 <div className="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-red-500"></div>
@@ -59,7 +64,8 @@ function Hero() {
                 >
                   Hero.jsx
                 </button>
-                <button onClick={() => setActiveTab("Navbar.jsx")}
+                <button
+                  onClick={() => setActiveTab("Navbar.jsx")}
                   className={`px-3 py-2 backdrop-blur-sm text-xs sm:text-sm rounded-t-lg border ${
                     activeTab === "Navbar.jsx"
                       ? "bg-blue-500/30 text-white border-blue-400/20"
@@ -69,6 +75,23 @@ function Hero() {
                   Navbar.jsx
                 </button>
               </div>
+              {/* Code example display area */}
+              <div className="relative overflow-hidden flex-grow">
+                <SyntaxHighlighter
+                  language="javascript"
+                  style={nightOwl}
+                  customStyle={{
+                    margin: 0,
+                    borderRadius: "8px",
+                    fontSize: "11px",
+                    height: "100%",
+                    lineHeight: "1.4",
+                    border: "1px solid #3c3c3c",
+                  }}
+                >
+                  {codeExample[activeTab]}
+                </SyntaxHighlighter>
+              </div>
             </div>
           </div>
         </div>
@@ -76,5 +99,3 @@ function Hero() {
     </section>
   );
 }
-
-export default Hero;
