@@ -74,3 +74,11 @@ export const codeExample = {
     )
     `,
 };
+
+
+
+export const cardsFloating = {
+  "App.jsx":{
+
+  }
+}
