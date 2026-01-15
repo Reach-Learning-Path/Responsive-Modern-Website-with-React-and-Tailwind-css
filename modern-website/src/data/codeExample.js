@@ -86,8 +86,8 @@ export const cardsFloating = {
     content: "AI-powered code suggestions",
   },
   "Hero.jsx": {
-    bgColor: "bg-blue-500/20",
-    iconColor: "text-blue-400",
+    bgColor: "bg-green-700/30",
+    iconColor: "text-cyan-400",
     textColor: "text-blue-200",
     contentColor: "text-blue-300",
     icon: "⚡️",
@@ -95,7 +95,7 @@ export const cardsFloating = {
     content: "Boost your productivity with AI-driven code completions",
   },
   "Navbar.jsx": {
-    bgColor: "bg-blue-500/20",
+    bgColor: "bg-red-600/20",
     iconColor: "text-blue-400",
     textColor: "text-blue-200",
     contentColor: "text-blue-300",

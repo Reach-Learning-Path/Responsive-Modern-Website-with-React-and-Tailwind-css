@@ -13,6 +13,12 @@
   .duration-200{
     animation-duration: 200ms;
   }
+  .duration-700{
+    animation-duration: 700ms;
+  }
+  .slide-in-from-bottom {
+    animation-name: slideFromBottom;
+  }
 
   @keyframes slideInFromTop {
     from {
@@ -25,3 +31,15 @@
     }
   }
 }
+  @keyframes slideFromBottom {
+    from {
+      transform: translateY(1rem);
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
