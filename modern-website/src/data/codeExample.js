@@ -75,10 +75,32 @@ export const codeExample = {
     `,
 };
 
-
-
 export const cardsFloating = {
-  "App.jsx":{
-
-  }
-}
+  "App.jsx": {
+    bgColor: "bg-blue-500/20",
+    iconColor: "text-blue-400",
+    textColor: "text-blue-200",
+    contentColor: "text-blue-300",
+    icon: "AI",
+    title: "Smart Completion,",
+    content: "AI-powered code suggestions",
+  },
+  "Hero.jsx": {
+    bgColor: "bg-blue-500/20",
+    iconColor: "text-blue-400",
+    textColor: "text-blue-200",
+    contentColor: "text-blue-300",
+    icon: "⚡️",
+    title: "Fast & Intelligent,",
+    content: "Boost your productivity with AI-driven code completions",
+  },
+  "Navbar.jsx": {
+    bgColor: "bg-blue-500/20",
+    iconColor: "text-blue-400",
+    textColor: "text-blue-200",
+    contentColor: "text-blue-300",
+    icon: "🔎",
+    title: "Smart Completion,",
+    content: "AI-powered code suggestions",
+  },
+};

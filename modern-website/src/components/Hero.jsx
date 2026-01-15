@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { ChevronDown } from "lucide-react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { codeExample } from "../data/codeExample";
+import { cardsFloating, codeExample } from "../data/codeExample";
 import { nightOwl } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
 export default function Test() {
@@ -17,6 +17,8 @@ export default function Test() {
       window.removeEventListener("mousemove", handleMouseMove);
     };
   }, []);
+
+  const currentCard = cardsFloating[activeTab];
 
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-16 sm:pt-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
@@ -95,6 +97,15 @@ export default function Test() {
             </div>
           </div>
           {/* Card */}
+          <div
+            className={`hidden lg:block absolute bottom-4 right-4 transform translate-y-8 translate-x-8 w-72 ${currentCard.bgColor}`}
+          >
+            <div className="flex items-center space-x-2 mb-2">
+              <div className={`w-6 h-6 ${currentCard.iconColor} flex items-center justify-center text-sm font-bold`}>{currentCard.icon}</div>
+              <span className={`text-sm font-medium ${currentCard.textColor}`}>{currentCard.title}</span>
+            </div>
+            <div className={`text-sm font-medium ${currentCard.textColor}`}>{currentCard.content}</div>
+          </div>
         </div>
       </div>
     </section>
