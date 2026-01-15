@@ -37,10 +37,16 @@ export default function Test() {
               <span className="text-xs">Introducing CodeFlowing</span>
             </div>
             <div>
-              <h1 className="text-5xl sm:text-3xl md:text-4xl lg:text-5-xl">
-                <span>The Future of Fast Development</span>
-                <span>Code.Build.Launch.</span>
-                <span>Rapid by Nature</span>
+              <h1 className="text-5xl sm:text-3xl md:text-4xl lg:text-5-xl font-semibold mb-4 sm:mb-6 animate-in slide-in-from-bottom duration-700 delay-100 leading-tight">
+                <span className="bg-gradient-to-r from-white via-blue-100/20 to-cyan-100 bg-clip-text text-transparent block mb-1 sm:mb-2">
+                  The Future is Here{" "}
+                </span>
+                <span className="bg-gradient-to-r from-blue-400 via-cyan-400/20 to-blue-400 bg-clip-text text-transparent block mb-1 sm:mb-2">
+                  Code.Build.Launch.
+                </span>
+                <span className="bg-gradient-to-r from-white via-blue-100/20 to-cyan-100 bg-clip-text text-transparent block mb-1 sm:mb-2">
+                  Rapid by Nature
+                </span>
               </h1>
             </div>
           </div>
