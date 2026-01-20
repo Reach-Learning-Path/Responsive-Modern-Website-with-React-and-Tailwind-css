@@ -49,6 +49,14 @@ export default function Test() {
                 </span>
               </h1>
             </div>
+            <p className="text-md sm:text-base lg:text-lg text-grey-400 max-w-2xl mx-auto lg:mx-0 mb-8 animate-in slide-in-from-bottom duration-700 delay-200 leading-relaxed">
+              This is a place for curious souls who believe they can build
+              something meaningful with technology.Whether you’re just starting
+              out or already deep into coding and AI, you’re welcome here.
+              Mistakes are part of the journey, questions are encouraged, and
+              growth is the goal. Let’s learn together, support each other, and
+              turn ideas into something real — one line of code at a time.
+            </p>
           </div>
           <div className="relative order-2 w-full">
             <div className="relative bg-white/5 backdrop-blur-xl rounded-xl sm:-2xl p-3 sm:p-4 shadow-2xl border border-white/10">
