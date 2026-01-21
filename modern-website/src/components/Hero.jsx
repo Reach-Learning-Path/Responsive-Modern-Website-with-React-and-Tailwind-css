@@ -65,14 +65,14 @@ export default function Test() {
               <div className="bg-gradient-to-br from-gray-900/20 to-gray-800/20 backdrop-blur-sm rounded-lg overflow-hidden h-[280px] sm:h-[450px] border border-white/5">
                 {/* Hero Content */}
                 <div className="flex items-center justify-between px-3 sm:px-4 py-2 sm:py-3 bg-white/5 backdrop-blur-sm border-b border-white/10">
-                  <div className="flex items-center sm:space-x-2">
+                  <div className="flex items-center space-x-2">
                     <div className="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-red-500"></div>
                     <div className="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-yellow-500"></div>
                     <div className="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-green-500"></div>
-                    <span className="text-xs sm:text-sm text-gray-300">
-                      CodeFlowing
-                    </span>
                   </div>
+                  <span className="text-xs sm:text-sm text-gray-300">
+                    CodeFlowing
+                  </span>
                   <ChevronDown className="w-4 h-4" />
                 </div>
                 <div className="p-3 sm:p-4 relative h-full ">
