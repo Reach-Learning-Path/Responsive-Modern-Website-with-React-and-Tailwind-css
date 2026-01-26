@@ -22,9 +22,8 @@ export const codeExample = {
     )
     `,
   "Hero.jsx": `
-    import {useState} from 'react';
+    import {useState,useEffect} from 'react';
     import {CodeFlow} from 'react;
-    import {useEffect} from 'react;
 
 
     function Hero(){

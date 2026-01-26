@@ -17,7 +17,6 @@ const features = [
       "Find your mistakes and fix them quickly with our intelligent debugging tools.",
     codeSnippet: `function handleSubmit(){
        fetch("/api/submit")
-       .then((response)=> response.json())
        .then((data)=> console.log("Success:", data))
        .catch((error)=> console.error("Error:", error))
    }`,
