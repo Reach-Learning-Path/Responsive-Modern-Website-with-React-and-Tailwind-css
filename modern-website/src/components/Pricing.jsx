@@ -65,9 +65,14 @@ function Pricing() {
               <h3 className="text-3xl font-bold text-green-600">
                 {plan.name}{" "}
               </h3>
-              <p className="text-center text-lg font-bold">{plan.description}</p>
-              <p className="text-xl font-bold text-center mt-2 sm:mt-4">
+              <p className="text-center text-lg font-bold">
+                {plan.description}
+              </p>
+              <div className="text-3xl sm:text-4xl lg:text-5xl bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">
                 ${plan.price}
+              </div>
+              <p className="text-stone-400">
+                {plan.features}
               </p>
             </div>
           </div>
